@@ -5,7 +5,7 @@ export class Accounts {
     @PrimaryGeneratedColumn()
     id: number 
 
-    @Column({type: 'text'})
-    balance: string  
+    @Column()
+    balance: number
 
 }

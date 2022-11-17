@@ -13,7 +13,7 @@ export class User {
     @Column()
     password: string ;
 
-    @OneToOne(() => Accounts)
+    @OneToOne(() => Accounts, account => account.id)
     @JoinColumn() 
     accountid: Accounts ;
 }
